@@ -1,0 +1,17 @@
+--- step ---
+1. cd hello
+2. go mod init example/hello -> to make go.mod -> to get go package
+3. create a file -> hello.go
+4. run go 
+    -> go run
+    -> go run hello.go
+
+-- how to import go package --
+1. go to website Visit pkg.go.dev and https://pkg.go.dev/rsc.io/quote/v4
+    -> at this website you will see index title -> the command that can use in this package
+2. you will see rsc.io/quote/v4 in the top
+    -> import "rsc.io/quote/v3"
+3. Go will add the quote module as a requirement, as well as a go.sum file for use in authenticating the module
+    -> go mod tidy -> you will get go.sum
+
+4. go run .
